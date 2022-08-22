@@ -1,0 +1,19 @@
+{
+  "comments": [
+    {
+      "userID": 0,
+      "userName": "user_ID_1",
+      "content": "댓글1"
+    },
+    {
+      "userID": 1,
+      "userName": "user_ID_1",
+      "content": "댓글2"
+    },
+    {
+      "userID": 2,
+      "userName": "user_ID_1",
+      "content": "댓글3"
+    }
+  ]
+}
