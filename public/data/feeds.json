@@ -1,0 +1,49 @@
+{
+  "feedData": [
+    {
+      "feedId": 1,
+      "username": "kowoon_lee",
+      "feedImages": [
+        {
+          "imageId": 105,
+          "imageUrl": "https://image.shutterstock.com/image-photo/mountain-peaks-torres-del-paine-600w-1931671382.jpg"
+        },
+        {
+          "imageId": 106,
+          "imageUrl": "https://image.shutterstock.com/image-illustration/watercolor-handpainted-scenery-pink-purple-600w-1381944017.jpg"
+        }
+      ],
+      "content": "풍경이 이쁩니다."
+    },
+    {
+      "feedId": 2,
+      "username": "jiwoon_jo",
+      "feedImages": [
+        {
+          "imageId": 107,
+          "imageUrl": "https://image.shutterstock.com/image-illustration/watercolor-handpainted-scenery-pink-purple-600w-1381944017.jpg"
+        },
+        {
+          "imageId": 108,
+          "imageUrl": "https://image.shutterstock.com/image-vector/bread-slices-icon-illustration-isolated-600w-542536165.jpg"
+        }
+      ],
+      "content": "풍경이 환상입니다."
+    },
+    {
+      "feedId": 3,
+      "username": "sangrok_lee",
+      "feedImages": [
+        {
+          "imageId": 109,
+          "imageUrl": "https://image.shutterstock.com/image-photo/assortment-baked-bread-on-wood-600w-59248078.jpg"
+        },
+        {
+          "imageId": 110,
+          "imageUrl": "https://image.shutterstock.com/image-vector/bread-slices-icon-illustration-isolated-600w-542536165.jpg"
+        }
+      ],
+      "content": "풍경이 와따입니다."
+    }
+  ]
+}
