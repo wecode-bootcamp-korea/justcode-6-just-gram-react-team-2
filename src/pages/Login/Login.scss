@@ -1,0 +1,64 @@
+$login-color: dodgerblue;
+
+.out-login {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loginTitle {
+  text-align: center;
+  font-family: lobster;
+  font-size: 45px;
+  position: relative;
+}
+
+div {
+  .main {
+    border: 1px solid grey;
+    margin: auto;
+    width: 350px;
+    height: 396px;
+  }
+  .container {
+    width: 348px;
+    height: 265px;
+  }
+  .inputBox {
+    margin-bottom: 10px;
+  }
+
+  .bottomText {
+    top: 70px;
+    text-align: center;
+    position: relative;
+    left: auto;
+    color: $login-color;
+  }
+}
+
+input {
+  margin: auto;
+  display: block;
+  width: 258px;
+  height: 36px;
+}
+
+#btn {
+  position: relative;
+  margin: auto;
+  display: block;
+  width: 266px;
+  height: 42px;
+  color: antiquewhite;
+  background-color: $login-color;
+  border: $login-color;
+  opacity: 0.5;
+}
+
+.cursorChange {
+  &:hover {
+    cursor: pointer;
+  }
+}

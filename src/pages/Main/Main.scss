@@ -1,0 +1,123 @@
+.custom-border {
+  border: grey solid 1px;
+}
+
+.text_bold {
+  font-weight: bold;
+}
+
+.vertical-center {
+  display: flex;
+  align-items: center;
+}
+
+.icon-round {
+  border: black solid 1px;
+  margin-right: 5px;
+  border-radius: 20px;
+}
+
+.contents-divider {
+  margin-bottom: 10px;
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 10px auto;
+}
+
+.header-text {
+  padding-left: 15px;
+  font-family: "Lobster", cursive;
+  font-size: 25px;
+}
+
+.icon-resize {
+  height: 32px;
+  width: 32px;
+}
+
+.icon-border {
+  padding-right: 10px;
+  border-right: black solid 3px;
+}
+
+.custom-margin-left {
+  margin-left: 10px;
+}
+
+.contents-wrapper {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.feed-container {
+  width: 700px;
+}
+
+.feed-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.feed-img-wrapper {
+  height: 700px;
+}
+
+.feed-img {
+  height: 100%;
+  width: 100%;
+}
+
+.feed-menu {
+  margin: 8px;
+  justify-content: space-between;
+  display: flex;
+}
+
+.feed-icon-resize {
+  margin-top: 3px;
+  height: 30px;
+  width: 30px;
+}
+.comment-icon-resize {
+  height: 25px;
+  width: 25px;
+  margin: 5px;
+}
+
+.feed-text {
+  margin: 10px;
+}
+.feed-text-like {
+  margin-bottom: 8px;
+}
+
+.grey-text {
+  color: gray;
+}
+
+.feed-comment {
+  display: flex;
+  border-top: solid 1px gray;
+}
+
+.feed-comment-text {
+  padding: 10px 8px;
+}
+
+.comment-write-input {
+  flex: 1;
+}
+
+.comment-name {
+  font-weight: bold;
+  margin-right: 10px;
+}
