@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import Feed from "./Feed";
 import "./Main.scss";
 
 function Main() {
   const [feeds, setFeeds] = useState([]);
+  const [userInfo, setUserInfo] = useState();
+  const navigate = useNavigate();
 
   useEffect(() => {
     fetch("/data/feeds.json")
@@ -17,12 +20,13 @@ function Main() {
     fetch("http://auth.jaejun.me:10010/me", {
       headers: {
         Authorization:
-          "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxMywiaWF0IjoxNjYxMjQzMzk2LCJleHAiOjE2NjM5MjE3OTZ9.5Jsw-3qDIdIm3uvoKbTASt16iG7gJKM8uYtVQolzNYw",
+          "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxMywiaWF0IjoxNjYxMzIxMjIyLCJleHAiOjE2NjM5OTk2MjJ9.iYz_pq9HuWw2UPc1e193-jNIeBV55HdCa67EEuBk1VM",
       },
     })
       .then((res) => res.json())
       .then((data) => {
-        data.email !== undefined ? console.log("o") : console.log("x");
+        console.log(data);
+        data.email !== undefined ? setUserInfo(data) : navigate("/login");
       });
   }, []);
 
@@ -56,11 +60,12 @@ function Main() {
               className="icon-resize custom-margin-left"
               src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png"
             />
-            <img
+            {/* <img
               alt="이미지"
               className="icon-resize "
               src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/profile.png"
-            />
+            /> */}
+            <p>{userInfo && userInfo.email}</p>
           </div>
         </header>
       </div>
