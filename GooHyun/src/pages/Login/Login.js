@@ -50,6 +50,25 @@ function Login() {
     }
   }
 
+  // Login API
+  const onLoginButtonClick = () => {
+    const body = {
+      email: id,
+      password: password,
+    };
+    fetch("api주소", {
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(body),
+    })
+      .then((res) => res.json())
+      .then((json) => {
+        setToken(json.access_token);
+        localStorage.setItem("token", json.access_token);
+      });
+  };
+
   return (
     <React.Fragment>
       <div className="flex-center container">
