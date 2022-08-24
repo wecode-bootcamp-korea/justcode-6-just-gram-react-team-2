@@ -1,7 +1,7 @@
 import "./Comment.scss";
 
 function Comment(props) {
-  const { id, content, writer, createdAt } = props;
+  const { content, writer, createdAt } = props;
 
   return (
     <span>

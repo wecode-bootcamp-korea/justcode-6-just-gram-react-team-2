@@ -2,7 +2,6 @@ import React, { useState, useRef, useEffect } from "react";
 import Comment from "./Comment";
 
 function Feed({ feedData }) {
-  const [comment, setComment] = useState();
   const [id, setId] = useState(1);
   const value = useRef();
   const [commentArray, setCommentArray] = useState([]);
