@@ -1,15 +1,34 @@
 import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "./Main.scss";
 import Feed from "./Feed";
 
 function Main() {
   const [feeds, setFeeds] = useState([]);
+  const [userInfo, setUserInfo] = useState();
 
+  const navigate = useNavigate();
+
+  // feed 데이터 받기
   useEffect(() => {
     fetch("/data/feeds.json")
       .then((res) => res.json())
       .then((data) => {
         setFeeds(data.feeds);
+      });
+  }, []);
+
+  // GET token
+  useEffect(() => {
+    fetch("http://auth.jaejun.me:10010/me", {
+      method: "GET",
+      headers: {
+        Authorization: "토큰",
+      },
+    })
+      .then((res) => res.json)
+      .then((data) => {
+        data.email !== undefined ? setUserInfo(data.email) : navigate("/login");
       });
   }, []);
 
@@ -49,6 +68,7 @@ function Main() {
             src="/images/heart.png"
             alt="like-icon"
           />
+          <p>{userInfo && userInfo.email}</p>
         </div>
       </header>
       <div className="flex-center">
