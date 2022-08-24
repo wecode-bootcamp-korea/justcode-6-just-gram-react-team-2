@@ -1,0 +1,24 @@
+{
+  "comments": [
+    {
+      "id": 1,
+      "userName": "user1",
+      "content": "보기만 해도 시원한 폭포....!"
+    },
+    {
+      "id": 2,
+      "userName": "code Kim",
+      "content": "거봐 좋았잖아!"
+    },
+    {
+      "id": 3,
+      "userName": "user121",
+      "content": "코딩....!"
+    },
+    {
+      "id": 4,
+      "userName": "code Kim",
+      "content": "하!"
+    }
+  ]
+}

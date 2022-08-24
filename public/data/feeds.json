@@ -1,0 +1,35 @@
+{
+  "feedData": [
+    {
+      "feedId": 1,
+      "username": "codekim",
+      "feedImages": [
+        {
+          "imageId": 105,
+          "imageUrl": "https://images.unsplash.com/photo-1659397426038-7a7ca56e5e15?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60"
+        },
+        {
+          "imageId": 106,
+          "imageUrl": "https://images.unsplash.com/photo-1659397426038-7a7ca56e5e15?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60"
+        }
+      ],
+      "content": "내용"
+    },
+
+    {
+      "feedId": 2,
+      "username": "codelee",
+      "feedImages": [
+        {
+          "imageId": 105,
+          "imageUrl": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
+        },
+        {
+          "imageId": 106,
+          "imageUrl": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
+        }
+      ],
+      "content": "내용2"
+    }
+  ]
+}
