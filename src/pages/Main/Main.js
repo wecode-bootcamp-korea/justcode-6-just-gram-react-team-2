@@ -44,6 +44,7 @@ function Main() {
               alt="이미지"
               className="icon-resize icon-border"
             />
+            <span></span>
             <span className="header-text">justgram</span>
           </div>
           <div>
